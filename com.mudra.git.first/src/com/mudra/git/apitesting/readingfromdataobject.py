@@ -13,7 +13,7 @@ example run
  #   assert eval(test_input) == expected
 '''
 test_data_zip_codes = [
-    ("us", "90210", "Beverly Hills"),
+    ("us", "90210", "Beverly Hill"),
     ("ca", "B2A", "North Sydney South Central"),
     ("it", "50123", "Firenze")]
 

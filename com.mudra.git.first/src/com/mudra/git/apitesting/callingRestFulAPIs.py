@@ -1,6 +1,4 @@
 '''
-Created on 24 Feb 2021
-
 https://www.ontestautomation.com/writing-tests-for-restful-apis-in-python-using-requests-part-1-basic-tests/
 '''
 import unittest
@@ -59,7 +57,7 @@ class TestcallingRestFulAPI(unittest.TestCase):
         
     #check that the list of places returned by the API contains exactly one entry:
     @staticmethod
-    def test_get_locations_for_us_522001_check_one_place_is_returned():
+    def test_get_locations_for_us_522001_check_multiple_places_are_returned():
         response = requests.get(purl)
         response_body = response.json()
         assert len(response_body["places"]) == 1 #returns multiple places and test fail
