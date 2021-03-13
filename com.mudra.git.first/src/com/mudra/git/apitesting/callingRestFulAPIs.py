@@ -5,9 +5,8 @@ import unittest
 import requests
 
 class TestcallingRestFulAPI(unittest.TestCase):
-    global purl 
     purl = "http://api.zippopotam.us/IN/522001"
-        
+    
     '''
     NOTES: 
     In Python you should add self argument as the first argument to all defined methods in classes.
