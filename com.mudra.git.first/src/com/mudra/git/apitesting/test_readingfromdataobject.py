@@ -1,5 +1,6 @@
 import pytest
 import requests
+
 '''
 To make pytest runner work on eclipse
 
@@ -13,7 +14,7 @@ example run
  #   assert eval(test_input) == expected
 '''
 test_data_zip_codes = [
-    ("us", "90210", "Beverly Hill"),
+    ("us", "90210", "Beverly Hills"),
     ("ca", "B2A", "North Sydney South Central"),
     ("it", "50123", "Firenze")]
 

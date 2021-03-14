@@ -1,0 +1,9 @@
+{
+    "pythonTestExplorer.testFramework": "pytest",
+    "python.testing.pytestArgs": [
+        "com.mudra.git.first"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
