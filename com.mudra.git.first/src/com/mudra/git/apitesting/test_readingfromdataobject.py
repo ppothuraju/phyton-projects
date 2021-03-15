@@ -8,13 +8,14 @@ https://stackoverflow.com/questions/41399825/how-to-run-pytest-on-eclipse
         Window -> Preferences -> PyDev -> PyUnit
         Change the test runner to "py.test runner" and clear the parameters (or add the ones you prefer. Make sure they are valid flags for pytest.)
 
+@@@ each test can be configured to run by separate runner by configuring runner arguments (right click -> Run Configuration -> Arguments -> Override PyUnit preferences -> select required runner 
 example run
 #@pytest.mark.parametrize("test_input,expected", [("3+5", 8), ("2+4", 6), ("6*9", 42)])
 #def test_eval(test_input, expected):
  #   assert eval(test_input) == expected
 '''
 test_data_zip_codes = [
-    ("us", "90210", "Beverly Hills"),
+    ("us", "90210", "Beverly Hill"),
     ("ca", "B2A", "North Sydney South Central"),
     ("it", "50123", "Firenze")]
 

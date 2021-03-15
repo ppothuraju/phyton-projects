@@ -1,0 +1,23 @@
+To determine why tests are not running, these steps are useful:
+
+    Verify that all files with test cases start with 'test_' word.
+    Verify that all test cases names also start with 'test_' word.
+    Verify that you have created pytest.ini file in the root directory
+    Verify that you have __init__.py file in all directories/sub-directories of the project
+
+
+Pytest is not running the tests
+
+It didn't work for you because you left "--verbosity 0" in the parameters text field. I don't know why it's not automatically erased by Eclipse, but when you change the runner you MUST also change the parameters to reflect your preferred test runner (pytest in this case).
+
+Globally for all new configurations:
+
+        Window -> Preferences -> PyDev -> PyUnit
+        Change the test runner to "py.test runner" and clear the parameters (or add the ones you prefer. Make sure they are valid flags for pytest.)
+
+Or, if you prefer, manually for each new run configuration
+
+        Create a Python unittest run configuration
+        Select the class you want to run and the project (if they are not already there)
+        In the Arguments tab override the pyUnit preferences with a py.test runner (clean up the parameters and add whatever you want to add to pytest flags)
+
