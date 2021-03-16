@@ -17,7 +17,7 @@ def breakIntoRowAndCols(s_string):
         if(n==9):
             s_rows.append(row)
             i_rows.append([int(i) for i in row])
-            #print(srows,end="\n")
+            print(i_rows,end="\n")
             row = []
             n = 0
     #columns from rows
@@ -93,9 +93,6 @@ def checkDuplicatesInRowsColsAndSquares(rows,cols,squares):
     #print(len(dups_in_cols))
     return True
 
-def checkDuplicatesInSubSquares(s_rows):
-    return False   
-
 def validateSodukuString(s_string):
     
     s_string = s_string.replace("\n","")
@@ -108,7 +105,7 @@ def validateSodukuString(s_string):
         print("Valid Sodku")
     else:
         print("Invalid Soduku - Some rows or cols or subsquares have duplicates")
-    print_in_martix(s_rows)
+    print_in_martix(i_rows)
        
     
     
@@ -143,36 +140,4 @@ validateSodukuString('''195743862
 928671354
 254938671''')
 
-
-
-
-# rows = [int(i) for i in rows] #converting to integers
-# cols = [int(i) for i in cols] 
-# print(rows)
-# print(cols)
-
-
-
-# breaking string at nth character
-'''
-Use a for-loop and range(start, stop, step) to iterate over a range from start to stop where stop is the len(string) 
-and step is every number of characters where the string will be split. 
-Use string slicing syntax string[index : index + step] to acquire a string with step characters. 
-Use list.append() to add that previously described string to a list. 
-'''
-# n = 9
-# for index in range(0, len(s_string), n):
-#
-    # row.append(int(s_string[index : index + n]))
-    #
-# print(rows)
-
-'''
-Use list comprehension for a more compact implementation.
-
-#breaking string into rows
-n=9
-rows = [int(s_string[index : index + n]) for index in range(0, len(s_string), n)] #int covert to integer
-print(rows)
-'''
 
