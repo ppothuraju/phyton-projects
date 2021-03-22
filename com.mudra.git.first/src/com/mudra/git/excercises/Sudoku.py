@@ -34,6 +34,7 @@ def square1(sstring):
     sodoku_sub_square1.extend(sstring[9:12])
     sodoku_sub_square1.extend(sstring[18:21])
     print("sodoku-square1 = ", end="\n")
+    print(sodoku_sub_square1)
     print_in_martix(sodoku_sub_square1)
     duplicates = [x for n, x in enumerate(sodoku_sub_square1) if x in sodoku_sub_square1[:n]]
     if len(duplicates) == 0:
